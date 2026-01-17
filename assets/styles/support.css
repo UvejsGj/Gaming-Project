@@ -28,6 +28,15 @@ body {
 }
 
 a {
+  position: relative;
   text-decoration: none;
-  color: lightblue;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-right: 40px;
+  top: -28%;
+}
+
+.active {
+    color: rgb(1, 132, 255);        
+    font-weight: bold;
 }
