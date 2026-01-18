@@ -32,7 +32,7 @@ body {
 }
 
 .active {
-  color: #1a9fff;
+  color: #1a9fff !important;
   font-weight: bold;
   border-bottom: 3px solid #1a9fff;
   padding-bottom: 2px;
@@ -589,4 +589,3 @@ body {
   position: relative;
   z-index: 2;         
 }
-
