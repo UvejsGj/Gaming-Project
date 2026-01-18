@@ -22,9 +22,6 @@ body {
   margin-left: 100px;
 }
 
-/* REMOVE your global a { ... } */
-
-/* Only style the navbar links */
 .navbar > a {
   position: relative;
   top: -28%;
@@ -33,8 +30,6 @@ body {
   font-size: 20px;
   margin-right: 40px;
 }
-
-
 
 .active {
   color: #1a9fff;
@@ -496,9 +491,8 @@ body {
   background: rgba(255, 255, 255, 0.45);
 }
 
-/* Keep the info strip fixed height like Steam */
 .deal_card.small {
-  grid-template-rows: 1fr 72px;  /* was 92px */
+  grid-template-rows: 1fr 72px;  
 }
 
 
@@ -518,12 +512,12 @@ body {
 }
 
 .deal_media {
-  min-height: 0;      /* IMPORTANT for CSS grid */
+  min-height: 0;      
   overflow: hidden;
 }
 
 .deal_info {
   position: relative;
-  z-index: 2;         /* ensures info stays above */
+  z-index: 2;         
 }
 
