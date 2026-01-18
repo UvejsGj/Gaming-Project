@@ -1,26 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* ================= GLOBAL ================= */
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  background-color: #1a2b40;
-  color: #ffffff;
+  background-color: #1b2838;
+  color: #c6d4df;
   overflow-x: hidden;
 }
 
+
 .navbar {
-  position: absolute;
-  background-color: #171d25;
+  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
   height: 130px;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  color: lightblue;
+  position: relative;
 }
 
 .steamlogo {
@@ -30,108 +26,179 @@ body {
 
 a {
   position: relative;
+  top: -28%;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 20px;
   margin-right: 40px;
-  top: -28%;
 }
 
 .active {
-  color: rgb(1, 132, 255);
+  color: #1a9fff;
   font-weight: bold;
-  text-decoration: none;
-  border-bottom: 3px solid rgb(1, 132, 255);
+  border-bottom: 3px solid #1a9fff;
   padding-bottom: 2px;
 }
 
+
 .header {
   display: flex;
-  position: relative;
-  margin: none;
-  padding: none;
-  background-color: #182536;
-  color: white;
-  top: 16px;
-  /* text-align: center; */
-  /* align-content: center; */
+  align-items: center;
   justify-content: center;
-  height: 30px;
   gap: 50px;
+
+  background-color: #2a475e;
+  height: 36px;
+  margin-top: 16px;
 }
 
 .header h4 {
   margin: 0;
-  padding: 5px;
-  font-size: 16px;
-  color: #c1c3c7;
+  font-size: 14px;
+  color: #c6d4df;
 }
 
 .search_box {
-  background: none;
-  border: 1px solid #c1c3c7;
-  border-radius: 10px;
-  color: #c1c3c7;
+  background: #1b2838;
+  border: 1px solid #4b6b88;
+  border-radius: 4px;
+  color: #c6d4df;
   width: 200px;
+  padding: 4px 8px;
 }
 
+
 .main_page {
-  color: #c1c3c7;
-  position: absolute;
-  top: 25%;
-  left: 25%;
+  position: relative;
+  top: 50px;
+  width: min(1200px, 95%);
+  margin: 72px auto 0;
+}
+
+.main_page > h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+
+.main_background {
+  display: flex;
+  align-items: stretch;
+
+  background: linear-gradient(
+    180deg,
+    #223a52 0%,
+    #1b2838 100%
+  );
+
+  padding: 14px;
+  border-radius: 4px;
+}
+
+.main_background > * {
+  height: 360px;
+}
+
+/* fotoja majt */
+
+.main_image {
+  flex: 1;
+  overflow: hidden;
 }
 
 .eafc26 {
-  width: 65%;
-  box-shadow: 25px 25px 25px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+/* right p*/
 
 .main_content {
-  position: absolute;
-  left: 44.2%;
-  top: 14.6%;
-  /* border: 2px solid #c1c3c7; */
-  height: 358px;
-  background-color: #0A141D;
+  flex: 0 0 360px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: transparent;
 }
 
-.main_background {
-  /* border: 2px solid #C1C3C7; */
-  width: 68%;
+/* panel text */
+
+.main_content h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .grid {
-  position: relative;
-  top: 25px;
   display: grid;
-  grid-template-columns: repeat(2, 162px);
-  grid-template-rows: repeat(2, 69px);
-  gap: 10px;
-  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .grid img {
-  width: 162px;
-  height: 69px;
+  width: 100%;
+  height: 72px;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 .main_content h3 {
-  position: relative;
-  top: 35px;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
+  margin: 10px 0 4px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .main_content h4 {
-  position: relative;
-  top: 35px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+  display: inline-block;
+  margin: 4px 0;
+  padding: 3px 6px;
+  font-size: 12px;
   background-color: gray;
-  width: 20%;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.main_content h5 {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #a4d007;
+}
+
+.org {
+  color: #738895;
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+
+.discount {
+  background-color: #4c6b22;
+  color: #a4d007;
+  padding: 2px 4px;
+  margin-left: 4px;
+  border-radius: 2px;
+}
+
+.steam_ad {
+  position: relative;
+  margin: 100px auto 0;      
+  width: 940px;              
+  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.steam_ad img {
+  display: block;            
+  width: 100%;
+  height: auto;
+}
+
+.steam_ad:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
