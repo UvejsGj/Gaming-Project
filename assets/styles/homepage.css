@@ -23,7 +23,7 @@ body {
   margin-left: 100px;
 }
 
-a {
+.navbar > a {
   position: relative;
   top: -28%;
   text-decoration: none;
@@ -31,6 +31,7 @@ a {
   font-size: 20px;
   margin-right: 40px;
 }
+
 
 .active {
   color: #1a9fff;
@@ -191,11 +192,7 @@ a {
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
 
-/* =========================================================
-   RESPONSIVE OVERRIDES (does NOT change 1920x1080 look)
-   ========================================================= */
-
-/* 1) Make the ad banner shrink on smaller screens */
+/* responsiv */
 @media (max-width: 1100px) {
   .steam_ad {
     width: min(940px, 95%);
@@ -203,7 +200,6 @@ a {
   }
 }
 
-/* 2) Tablet / smaller laptops: tighten header spacing + make featured fit */
 @media (max-width: 1024px) {
   .steamlogo {
     margin-left: 24px;
@@ -224,20 +220,16 @@ a {
     width: 170px;
   }
 
-  /* featured panel a bit narrower so it fits */
   .main_content {
     flex: 0 0 320px;
   }
 
-  /* keep same banner height, but let images breathe */
   .grid img {
     height: 68px;
   }
 }
 
-/* 3) Mobile / small tablets: stack the featured layout (Steam becomes vertical) */
 @media (max-width: 768px) {
-  /* don't push the section down with top:50 on small screens */
   .main_page {
     top: 0;
     margin-top: 28px;
@@ -247,12 +239,10 @@ a {
     flex-direction: column;
   }
 
-  /* remove forced equal height so it can grow naturally */
   .main_background > * {
     height: auto;
   }
 
-  /* give the main image a controlled height */
   .main_image {
     height: 240px;
   }
@@ -266,7 +256,6 @@ a {
     width: 100%;
   }
 
-  /* make grid thumbnails responsive */
   .grid img {
     height: 80px;
   }
@@ -299,4 +288,9 @@ a {
   .grid img {
     height: 70px;
   }
+}
+
+.steam_ad a {
+  display: block;      
+  line-height: 0;      
 }
