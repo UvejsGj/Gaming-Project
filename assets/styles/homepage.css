@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar {
   background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
   height: 130px;
@@ -40,7 +39,6 @@ a {
   padding-bottom: 2px;
 }
 
-
 .header {
   display: flex;
   align-items: center;
@@ -67,7 +65,6 @@ a {
   padding: 4px 8px;
 }
 
-
 .main_page {
   position: relative;
   top: 50px;
@@ -83,17 +80,11 @@ a {
   color: #ffffff;
 }
 
-
 .main_background {
   display: flex;
   align-items: stretch;
 
-  background: linear-gradient(
-    180deg,
-    #223a52 0%,
-    #1b2838 100%
-  );
-
+  background: linear-gradient(180deg, #223a52 0%, #1b2838 100%);
   padding: 14px;
   border-radius: 4px;
 }
@@ -103,7 +94,6 @@ a {
 }
 
 /* fotoja majt */
-
 .main_image {
   flex: 1;
   overflow: hidden;
@@ -117,7 +107,6 @@ a {
 }
 
 /* right p*/
-
 .main_content {
   flex: 0 0 360px;
   padding: 16px;
@@ -126,7 +115,6 @@ a {
 }
 
 /* panel text */
-
 .main_content h1 {
   margin: 0 0 10px;
   font-size: 30px;
@@ -186,19 +174,129 @@ a {
 
 .steam_ad {
   position: relative;
-  margin: 100px auto 0;      
-  width: 940px;              
-  
+  margin: 100px auto 0;
+  width: 940px;
+
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease, border 0.2s ease;
 }
 
 .steam_ad img {
-  display: block;            
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .steam_ad:hover {
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES (does NOT change 1920x1080 look)
+   ========================================================= */
+
+/* 1) Make the ad banner shrink on smaller screens */
+@media (max-width: 1100px) {
+  .steam_ad {
+    width: min(940px, 95%);
+    margin-top: 60px;
+  }
+}
+
+/* 2) Tablet / smaller laptops: tighten header spacing + make featured fit */
+@media (max-width: 1024px) {
+  .steamlogo {
+    margin-left: 24px;
+  }
+
+  a {
+    font-size: 16px;
+    margin-right: 18px;
+    top: -22%;
+  }
+
+  .header {
+    gap: 22px;
+    padding: 0 12px;
+  }
+
+  .search_box {
+    width: 170px;
+  }
+
+  /* featured panel a bit narrower so it fits */
+  .main_content {
+    flex: 0 0 320px;
+  }
+
+  /* keep same banner height, but let images breathe */
+  .grid img {
+    height: 68px;
+  }
+}
+
+/* 3) Mobile / small tablets: stack the featured layout (Steam becomes vertical) */
+@media (max-width: 768px) {
+  /* don't push the section down with top:50 on small screens */
+  .main_page {
+    top: 0;
+    margin-top: 28px;
+  }
+
+  .main_background {
+    flex-direction: column;
+  }
+
+  /* remove forced equal height so it can grow naturally */
+  .main_background > * {
+    height: auto;
+  }
+
+  /* give the main image a controlled height */
+  .main_image {
+    height: 240px;
+  }
+
+  .eafc26 {
+    height: 240px;
+  }
+
+  .main_content {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  /* make grid thumbnails responsive */
+  .grid img {
+    height: 80px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+    gap: 12px 18px;
+  }
+
+  .search_box {
+    width: min(260px, 90%);
+  }
+}
+
+@media (max-width: 480px) {
+  .main_content h1 {
+    font-size: 24px;
+  }
+
+  .main_content h3 {
+    font-size: 18px;
+  }
+
+  .grid {
+    gap: 6px;
+  }
+
+  .grid img {
+    height: 70px;
+  }
 }
