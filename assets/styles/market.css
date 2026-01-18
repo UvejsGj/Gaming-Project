@@ -52,15 +52,14 @@ a {
   }
 }
 
-/* Tablets / small laptops */
 @media (max-width: 768px) {
   .navbar {
-    height: auto;            /* allow wrapping */
+    height: auto;            
     padding-bottom: 10px;
   }
 
   .navbar > a {
-    top: 0;                  /* stop pushing links upward */
+    top: 0;                  
     display: inline-block;
     margin: 10px 12px 0 12px;
     font-size: 15px;
