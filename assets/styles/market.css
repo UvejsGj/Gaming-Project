@@ -74,3 +74,29 @@ a {
     margin: 8px 10px 0 10px;
   }
 }
+
+.header {
+  background-color: #4B692D;
+  position: relative; 
+  top: 130px;
+  height: 8em;
+}
+
+.header-text{
+  position: relative;
+  margin-left: 290px;
+  padding-top: 25px;
+  
+}
+
+.title {
+  font-weight: 20px;
+  font-size: 35px;
+  color: white;
+  font-family: Roboto;
+}
+
+.sub-title{
+ color: #729E45;
+}
+
