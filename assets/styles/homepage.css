@@ -294,6 +294,75 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .navbar > a {
+    font-size: 16px;
+    margin-right: 18px;
+    top: -20%;
+  }
+
+  .header {
+    gap: 22px;
+    padding: 0 12px;
+  }
+
+  .search_box {
+    width: 170px;
+  }
+}
+
+/* Tablets / small laptops */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;            /* allow wrapping */
+    padding-bottom: 10px;
+  }
+
+  .navbar > a {
+    top: 0;                  /* stop pushing links upward */
+    display: inline-block;
+    margin: 10px 12px 0 12px;
+    font-size: 15px;
+  }
+
+  .header {
+    flex-wrap: wrap;         /* prevent overflow */
+    height: auto;
+    gap: 12px 18px;
+    padding: 8px 12px;
+    margin-top: 10px;
+  }
+
+  .header h4 {
+    font-size: 13px;
+  }
+
+  .search_box {
+    width: min(260px, 92vw);
+    padding: 6px 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .navbar > a {
+    font-size: 14px;
+    margin: 8px 10px 0 10px;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+
+  .header h4 {
+    font-size: 12px;
+  }
+
+  .search_box {
+    width: 100%;
+  }
+}
+
 .deals {
   position: relative;
   top: 70px;
