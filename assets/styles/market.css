@@ -79,11 +79,13 @@ a {
   position: relative; 
   top: 130px;
   height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header-text{
   position: relative;
-  margin-left: 290px;
   padding-top: 25px;
   
 }
@@ -96,6 +98,6 @@ a {
 }
 
 .sub-title{
- color: #729E45;
+ color: #729E45; 
 }
 
