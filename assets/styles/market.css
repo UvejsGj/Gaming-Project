@@ -103,12 +103,12 @@ a {
 
 main{
   width: 95%;
-  margin-left: 40px;
+  margin: 0px 165px;
   padding: 0px;
 }
 
 .main-text{
-  margin: 150px 150px 30px 150px;
+  margin: 150px 150px 30px 2px;
   padding: 0;
   display: flex;
   justify-content: center;
