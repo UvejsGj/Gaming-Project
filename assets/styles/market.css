@@ -75,7 +75,7 @@ a {
   }
 }
 
-.header {
+ header {
   background-color: #4B692D;
   position: relative; 
   top: 130px;
@@ -87,29 +87,32 @@ a {
 
 .header-text{
   position: relative;
-  padding-top: 50px;
-  
+  top: 40px
 }
 
-.title {
-  font-weight:normal;
+ .title{
+  font-weight: normal;
   font-size: 35px;
   color: white;
   font-family: Roboto;
 }
 
-.sub-title{
+.header-text p{
  color: #729E45; 
+ margin: 0px;
 }
 
 main{
   width: 95%;
-  margin: 0px 165px;
+  margin: 200px 0px 0px 0px;
   padding: 0px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-text{
-  margin: 150px 150px 30px 2px;
+  margin: 0px 150px 0px 2px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -124,8 +127,8 @@ main{
 
 .all-listing-table{
   height: 300px;
-  width: 950px;
-  margin: 10px;
+  width: 700px;
+  margin: 10px 35px 10px 10px;
 }
 
 .listing-table {
@@ -144,7 +147,7 @@ main{
   padding: 12px;
   font-size: 12px;
   color: #8f98a0;
-  flex: 1;
+  margin-right: 45vh;
 }
 
 .second-listing{
@@ -153,6 +156,7 @@ main{
   color: #8f98a0;
   width: 140px;
   text-align: center;
+  margin-right: 30px;
 }
 
 .third-listing{
@@ -161,6 +165,7 @@ main{
   color: #8f98a0;
   width: 140px;
   text-align: center;
+  margin-left: 20px;
 }
 
 .items-listings {
