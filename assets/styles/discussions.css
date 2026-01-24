@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1b2838;
+  color: #c6d4df;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
+  height: 130px;
+  width: 100%;
+  position: relative;
+}
+
+.steamlogo {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.navbar > a {
+  position: relative;
+  top: -28%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.active {
+  color: #1a9fff !important;
+  font-weight: bold;
+  border-bottom: 3px solid #1a9fff;
+  padding-bottom: 2px;
+}
+
+.discussions_page {
+  width: min(1200px, 95%);
+  margin: 40px auto;
+  color: #c6d4df;
+}
+
+.discussions_intro {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.discussions_intro h1 {
+  color: #66c0f4;
+  margin-bottom: 12px;
+}
+
+.discussions_intro p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.discussion_search {
+  display: flex;
+  margin: 14px 0;
+}
+
+.discussion_search input {
+  flex: 1;
+  padding: 8px 10px;
+  background: #0f1c2a;
+  border: 1px solid #3a5a78;
+  color: #fff;
+}
+
+.discussion_search button {
+  background: #2a475e;
+  border: 1px solid #3a5a78;
+  color: #fff;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.forum_tabs {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tab {
+  padding: 8px 12px;
+  background: #1b2838;
+  border: 1px solid #2a475e;
+  color: #c6d4df;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #66c0f4;
+  color: #000;
+}
+
+.intro_right {
+  background: rgba(0,0,0,0.25);
+  padding: 14px;
+}
+
+.intro_right a {
+  display: block;
+  margin-top: 8px;
+  color: #66c0f4;
+  font-size: 14px;
+}
+
+.recent_games {
+  margin-top: 40px;
+}
+
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.games_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.game_forum {
+  display: flex;
+  gap: 10px;
+  background: rgba(0,0,0,0.25);
+  padding: 10px;
+}
+
+.game_forum img {
+  width: 32px;
+  height: 32px;
+}
+
+.forums_main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.forum_row {
+  display: grid;
+  grid-template-columns: 1fr 140px 120px;
+  padding: 12px;
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 6px;
+}
+
+.forum_row.header {
+  background: none;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.feature_item {
+  display: flex;
+  gap: 10px;
+  background: rgba(0,0,0,0.25);
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.feature_item img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 900px) {
+  .discussions_intro,
+  .forums_main {
+    grid-template-columns: 1fr;
+  }
+
+  .games_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .steamlogo {
+    margin-left: 24px;
+    height: 32px;
+  }
+
+  .navbar > a {
+    font-size: 16px;
+    margin-right: 18px;
+    top: -18%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;                
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .steamlogo {
+    margin-left: 12px;
+    margin-top: 14px;
+    height: 28px;
+  }
+
+  .navbar > a {
+    top: 0;                      
+    font-size: 15px;
+    margin: 8px 12px 0 12px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar > a {
+    font-size: 14px;
+    margin: 6px 10px;
+  }
+
+  .steamlogo {
+    height: 24px;
+  }
+}
