@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color:#1B2839;
+  color: #c6d4df;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #171D25;
+  height: 130px;
+  width: 100%;
+  position: relative;
+}
+
+.steamlogo {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.navbar > a {
+  position: relative;
+  top: -28%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+
+.page {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  margin-top: 5%;
+  background: #1B2839;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.login-card h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8fa6c9;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: #171D25;
+  border: 1px solid #171D25;
+  border-radius: 4px;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #5f7696;
+} 
+
+input:focus {
+  outline: none;
+  border-color: #3aa0ff;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.remember {
+  font-size: 14px;
+  color: #c7d5e0;
+}
+
+.remember input {
+  margin-right: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: linear-gradient(90deg, #3aa0ff, #2b7cff);
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.help {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #66c0f4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.help:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px;
+  }
+
+  .login-card h1 {
+    font-size: 24px;
+  }
+}
