@@ -93,7 +93,6 @@ a {
   font-weight: normal;
   font-size: 35px;
   color: white;
-  font-family: Roboto;
 }
 
 .header-text p{
@@ -184,7 +183,7 @@ main{
     padding: 12px;
     border-bottom: 1px solid #2a475e;
     margin-bottom: 5px;
-    background-color: #0f1a24;
+    background-color: rgb(15 26 36);
 }
 
 .items-listings:hover {
@@ -248,7 +247,6 @@ aside {
   background-color: #0f1a24;
   border-radius: 4px;
   padding: 12px;
-  font-family: "Roboto";
 }
 
 .section{
@@ -284,7 +282,6 @@ aside {
   border-radius: 2px;
   color: #c7d5e0;
   font-size: 13px;
-  outline: none;
 }
 
 .section input::placeholder {
@@ -351,7 +348,7 @@ aside {
 }
 
 .footer-links a {
-  color: #c7d5e0;
+  color: rgb(199 213 224);
   text-decoration: none;
   font-size: 15px;
 }
@@ -361,7 +358,7 @@ aside {
 }
 
 .footer-links a:hover {
-  color: #66c0f4;
+  color: rgb(102 192 244);
 }
 
 
