@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/styles/discussions.css" />
   </head>
   <body>
+    <!-- pjesa uvejsit -->
+
     <div class="navbar">
       <img class="steamlogo" src="/assets/Images/logo_steam.svg" alt="" />
       <a href="/homepage.html">STORE</a>
@@ -17,127 +19,134 @@
     </div>
 
     <div class="discussions_page">
+      <section class="discussions_intro">
+        <div class="intro_left">
+          <h1>Welcome to the Steam Discussions</h1>
 
-  <section class="discussions_intro">
-    <div class="intro_left">
-      <h1>Welcome to the Steam Discussions</h1>
+          <p>
+            <b>Everyone is invited!</b> The Steam discussions are for everyone,
+            new and advanced user alike!
+          </p>
+          <p>
+            <b>Searching is key!</b> Before you post a question, use the forum
+            search feature to determine whether your topic has already been
+            covered.
+          </p>
+          <p>
+            <b>Do not start flame wars!</b> If someone has engaged in behavior
+            that is detrimental to the discussion — spamming, harassment, etc —
+            report the post and we'll take a look.
+          </p>
 
-      <p><b>Everyone is invited!</b> The Steam discussions are for everyone, new and advanced user alike!</p>
-      <p><b>Searching is key!</b> Before you post a question, use the forum search feature to determine whether your topic has already been covered.</p>
-      <p><b>Do not start flame wars!</b> If someone has engaged in behavior that is detrimental to the discussion — spamming, harassment, etc — report the post and we'll take a look.</p>
+          <div class="discussion_search">
+            <input type="text" placeholder="Search discussions" />
+            <button>🔍</button>
+          </div>
 
-      <div class="discussion_search">
-        <input type="text" placeholder="Search discussions">
-        <button>🔍</button>
-      </div>
+          <div class="forum_tabs">
+            <button class="tab active">Steam Forums</button>
+            <button class="tab">Game Forums</button>
+            <button class="tab">Tools & Servers</button>
+          </div>
+        </div>
 
-      <div class="forum_tabs">
-        <button class="tab active">Steam Forums</button>
-        <button class="tab">Game Forums</button>
-        <button class="tab">Tools & Servers</button>
-      </div>
+        <aside class="intro_right">
+          <h3>LINKS & RESOURCES</h3>
+          <a href="#">View Discussion Guidelines</a>
+          <a href="#">View Online Conduct Rules</a>
+        </aside>
+      </section>
+
+      <section class="recent_games">
+        <div class="section_header">
+          <h2>Forums for your recent games</h2>
+          <a href="https://steamcommunity.com/discussions/">MORE GAME FORUMS</a>
+        </div>
+
+        <div class="games_grid">
+          <div class="game_forum">
+            <img src="/assets/Images/war_thunder.png" alt="" />
+            <div>
+              <b>War Thunder</b>
+              <span>151,767 discussion threads</span>
+            </div>
+          </div>
+
+          <div class="game_forum">
+            <img src="/assets/Images/among_US.png" alt="" />
+            <div>
+              <b>Among Us</b>
+              <span>30,183 discussion threads</span>
+            </div>
+          </div>
+
+          <div class="game_forum">
+            <img src="/assets/Images/rdr2.jpg" alt="" />
+            <div>
+              <b>Red Dead Redemption 2</b>
+              <span>52,152 discussion threads</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="forums_main">
+        <div class="forums_left">
+          <h2>Steam Forums</h2>
+
+          <div class="forum_row header">
+            <span>FORUM</span>
+            <span>LAST POST</span>
+            <span>DISCUSSIONS</span>
+          </div>
+
+          <div class="forum_row">
+            <span>New to Steam</span>
+            <span>6 minutes ago</span>
+            <span>186,989</span>
+          </div>
+
+          <div class="forum_row">
+            <span>Help and Tips</span>
+            <span>2 minutes ago</span>
+            <span>622,707</span>
+          </div>
+
+          <div class="forum_row">
+            <span>Suggestions / Ideas</span>
+            <span>Just now</span>
+            <span>97,881</span>
+          </div>
+        </div>
+
+        <aside class="forums_right">
+          <h3>STEAM FEATURE DISCUSSIONS</h3>
+
+          <div class="feature_item">
+            <img src="/assets/Images/steam.png" alt="" />
+            <div>
+              <b>Steam Trading Cards Group</b>
+              <span>410,943 discussion threads</span>
+            </div>
+          </div>
+
+          <div class="feature_item">
+            <img src="/assets/Images/steam.png" alt="" />
+            <div>
+              <b>Steam Client Beta</b>
+              <span>95,516 discussion threads</span>
+            </div>
+          </div>
+
+          <div class="feature_item">
+            <img src="/assets/Images/steam.png" alt="" />
+            <div>
+              <b>SteamVR</b>
+              <span>38,784 discussion threads</span>
+            </div>
+          </div>
+        </aside>
+      </section>
     </div>
-
-    <aside class="intro_right">
-      <h3>LINKS & RESOURCES</h3>
-      <a href="#">View Discussion Guidelines</a>
-      <a href="#">View Online Conduct Rules</a>
-    </aside>
-  </section>
-
-  <section class="recent_games">
-    <div class="section_header">
-      <h2>Forums for your recent games</h2>
-      <a href="https://steamcommunity.com/discussions/">MORE GAME FORUMS</a>
-    </div>
-
-    <div class="games_grid">
-      <div class="game_forum">
-        <img src="/assets/Images/war_thunder.png" alt="">
-        <div>
-          <b>War Thunder</b>
-          <span>151,767 discussion threads</span>
-        </div>
-      </div>
-
-      <div class="game_forum">
-        <img src="/assets/Images/among_US.png" alt="">
-        <div>
-          <b>Among Us</b>
-          <span>30,183 discussion threads</span>
-        </div>
-      </div>
-
-      <div class="game_forum">
-        <img src="/assets/Images/rdr2.jpg" alt="">
-        <div>
-          <b>Red Dead Redemption 2</b>
-          <span>52,152 discussion threads</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="forums_main">
-    <div class="forums_left">
-      <h2>Steam Forums</h2>
-
-      <div class="forum_row header">
-        <span>FORUM</span>
-        <span>LAST POST</span>
-        <span>DISCUSSIONS</span>
-      </div>
-
-      <div class="forum_row">
-        <span>New to Steam</span>
-        <span>6 minutes ago</span>
-        <span>186,989</span>
-      </div>
-
-      <div class="forum_row">
-        <span>Help and Tips</span>
-        <span>2 minutes ago</span>
-        <span>622,707</span>
-      </div>
-
-      <div class="forum_row">
-        <span>Suggestions / Ideas</span>
-        <span>Just now</span>
-        <span>97,881</span>
-      </div>
-    </div>
-
-    <aside class="forums_right">
-      <h3>STEAM FEATURE DISCUSSIONS</h3>
-
-      <div class="feature_item">
-        <img src="/assets/Images/steam.png" alt="">
-        <div>
-          <b>Steam Trading Cards Group</b>
-          <span>410,943 discussion threads</span>
-        </div>
-      </div>
-
-      <div class="feature_item">
-        <img src="/assets/Images/steam.png" alt="">
-        <div>
-          <b>Steam Client Beta</b>
-          <span>95,516 discussion threads</span>
-        </div>
-      </div>
-
-      <div class="feature_item">
-        <img src="/assets/Images/steam.png" alt="">
-        <div>
-          <b>SteamVR</b>
-          <span>38,784 discussion threads</span>
-        </div>
-      </div>
-    </aside>
-  </section>
-
-</div>
-
-
   </body>
 </html>
