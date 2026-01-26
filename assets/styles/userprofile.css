@@ -131,3 +131,132 @@ body {
   background-color: rgba(0, 0, 0, 0.152);
 }
 
+/* ================= USER PROFILE RESPONSIVE ================= */
+
+/* Make sure nothing causes horizontal scrolling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-container {
+  width: min(1000px, 95%);
+}
+
+/* Your Recent Activity card uses .card-body.d-flex
+   On mobile we need it to wrap/stack */
+@media (max-width: 992px) {
+  /* Bootstrap lg breakpoint: columns become full width */
+  .pr-container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .pr-container img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  /* Right side action block (level + text + button) */
+  .pr-container .ms-auto {
+    width: 100%;
+    text-align: left !important;
+  }
+
+  /* Recent activity: allow wrap */
+  .card .card-body.d-flex {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* The left game image block */
+  .card .card-body.d-flex > .me-3 {
+    width: 100% !important;     /* overrides inline style width:30% */
+    max-width: 420px;
+  }
+
+  /* Middle text */
+  .card .card-body.d-flex > div:nth-child(2) {
+    width: 100%;
+  }
+
+  /* Right stats (ms-auto) */
+  .card .card-body.d-flex > .ms-auto {
+    width: 100%;
+    text-align: left !important;
+  }
+
+  /* Sidebar becomes full width */
+  .sidebar {
+    margin-top: 14px;
+  }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  /* Navbar logo smaller */
+  .navbar-brand img {
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  /* Reduce padding a bit */
+  .profile-container {
+    padding: 14px !important;
+  }
+
+  .pr-container {
+    padding: 12px !important;
+  }
+
+  /* Title sizes */
+  .pr-container h1 {
+    font-size: 20px !important;
+  }
+
+  /* Achievements icons smaller and wrap */
+  .achievements-icons {
+    flex-wrap: wrap;
+  }
+
+  .achievements-icons img {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Comments input group stack if needed */
+  .input-group {
+    flex-wrap: wrap;
+  }
+
+  .input-group .form-control {
+    flex: 1 1 100%;
+  }
+
+  .input-group .btn {
+    width: 100%;
+  }
+
+  /* Sidebar list spacing */
+  .sidebar ul li {
+    padding: 4px 0;
+  }
+}
+
+/* Optional: footer links wrap nicely */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.footer-bottom a {
+  color: #c6d4df;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-bottom a:hover {
+  color: #66c0f4;
+}
