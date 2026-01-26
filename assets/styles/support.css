@@ -138,7 +138,7 @@ img { max-width: 100%; height: auto; }
 
 .menu-left { display:flex; align-items:center; gap:12px; }
 
-.menu-left img { width: 36px; height: 36px; object-fit: cover; flex-shrink:0; }
+.menu-left img { width: 36px; height: 36px;  }
 
 .menu-text { font-size: 16px; font-weight: 600; }
 
@@ -167,7 +167,7 @@ img { max-width: 100%; height: auto; }
 
 
 .steam-footer {
-  background-color: #000;
+  background-color: black;
   color: #8f98a0;
   font-size: 12px;
   padding: 25px 0;

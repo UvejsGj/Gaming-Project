@@ -1,223 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steam User Profile</title>
-  <link rel="stylesheet" href="/assets/styles/userprofile.css">    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/userprofile.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+
+  <link rel="icon" href="/assets/Images/steam.png" type="image/x-icon" />
+
+
   <style>
-   
     .achievements p {
       margin: 0;
       font-weight: bold;
     }
+
     .achievements-icons {
       display: flex;
       gap: 0.5rem;
       margin-top: 0.5rem;
     }
+
     .achievements-icons img {
       width: 40px;
       height: 40px;
       object-fit: cover;
       border-radius: 5px;
     }
+
     .container-bg-dark {
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0, 0, 0, 0.7);
     }
+
     .profile-bio {
       background-color: #2c2c2c;
       border-radius: 8px;
     }
+
     .card {
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0, 0, 0, 0.4);
       color: white;
     }
+
     .card input {
       width: 100%;
     }
   </style>
 </head>
+
 <body>
-  
-<div class="navbar">
-      <img class="steamlogo" src="/assets/Images/logo_steam.svg" alt="" />
-      <a href="/homepage.html">STORE</a>
-      <a href="/pages/market.html">MARKET</a>
-      <a href="/pages/support.html">SUPPORT</a>
-      <a class="active" href="/pages/userprofile.html">MY PROFILE</a>
-      <a href="/pages/discussions.html">DISCUSSIONS</a>
-    </div>
+
+  <div class="navbar">
+    <img class="steamlogo" src="/assets/Images/logo_steam.svg" alt="" />
+    <a href="/homepage.html">STORE</a>
+    <a href="/pages/market.html">MARKET</a>
+    <a href="/pages/support.html">SUPPORT</a>
+    <a class="active" href="/pages/userprofile.html">MY PROFILE</a>
+    <a href="/pages/discussions.html">DISCUSSIONS</a>
+  </div>
 
 
-<div class="profile-container p-4 rounded shadow mx-auto" style="max-width: 1000px;">
-  <div class="d-flex gap-3">
-  <div class="profile-inner w-100" style="max-width: 1000px;">
-    
-  
+  <div class="profile-container p-4 rounded shadow mx-auto" style="max-width: 1000px;">
     <div class="d-flex gap-3">
-
-    
-      <div class="col-lg-8 col-md-12">
-
-        
-        <div class="pr-container d-flex align-items-center mb-4 p-3 rounded">
-          <img src="/assets/Images/kaktus.webp" class="rounded-circle border border-3 border-secondary me-3 bg-white" width="100" height="100" alt="User Profile">
-          <div>
-            <h1 class="h3 mb-0 text-white">Grupi XhUMD</h1>
-            
-            <p class="mb-0 text-success">Online</p>
-          </div>
-          <div class="ms-auto text-end">
-            <span class="badge bg-primary fs-6 px-3 py-2 mb-2">Level 42</span>
-           <div class="text-white rounded d-inline-block px-1 py-0">
-  <small>You can feature one of your Badges here. Select one from your edit profile page.</small>
-</div>
+      <div class="profile-inner w-100" style="max-width: 1000px;">
 
 
-
-            <button class="badge bg-success">Edit Profile</button>
-          </div>
-        </div>
+        <div class="d-flex gap-3">
 
 
-        <div class="card mb-3">
-          <div class="card-header d-flex align-items-center">
-            <h4 class="mb-0">Recent Activity</h4>
-            <p class="mb-0 ms-auto">4.3 hours past 2 weeks</p>
-          </div>
-          <div class="card-body d-flex">
-            <div class="me-3" style="width:30%">
-              <img src="/assets/Images/capsule_616x353.jpg" class="img-fluid mb-2" alt="img of total empire">
-              <div class="achievements">
-                <p class="mb-0">Achievements Progress - 6 of 30</p>
-                <div class="achievements-icons">
-                  <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.30.png" alt="">
-                  <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.43.png" alt="">
-                  <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.51.png" alt="">
-                  <img src="/assets/Images/Screenshot 2026-01-24 at 15.51.08.png" alt="">
+          <div class="col-lg-8 col-md-12">
+
+
+            <div class="pr-container d-flex align-items-center mb-4 p-3 rounded">
+              <img src="/assets/Images/kaktus.webp"
+                class="rounded-circle border border-3 border-secondary me-3 bg-white" width="100" height="100"
+                alt="User Profile">
+              <div>
+                <h1 class="h3 mb-0 text-white">Grupi XhUMD</h1>
+
+                <p class="mb-0 text-success">Online</p>
+              </div>
+              <div class="ms-auto text-end">
+                <span class="badge bg-primary fs-6 px-3 py-2 mb-2">Level 42</span>
+                <div class="text-white rounded d-inline-block px-1 py-0">
+                  <small>You can feature one of your Badges here. Select one from your edit profile page.</small>
+                </div>
+
+
+
+                <button class="badge bg-success">Edit Profile</button>
+              </div>
+            </div>
+
+
+            <div class="card mb-3">
+              <div class="card-header d-flex align-items-center">
+                <h4 class="mb-0">Recent Activity</h4>
+                <p class="mb-0 ms-auto">4.3 hours past 2 weeks</p>
+              </div>
+              <div class="card-body d-flex">
+                <div class="me-3" style="width:30%">
+                  <img src="/assets/Images/capsule_616x353.jpg" class="img-fluid mb-2" alt="img of total empire">
+                  <div class="achievements">
+                    <p class="mb-0">Achievements Progress - 6 of 30</p>
+                    <div class="achievements-icons">
+                      <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.30.png" alt="">
+                      <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.43.png" alt="">
+                      <img src="/assets/Images/Screenshot 2026-01-24 at 15.50.51.png" alt="">
+                      <img src="/assets/Images/Screenshot 2026-01-24 at 15.51.08.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="card-title">Total War: Empire – Definitive Edition</h5>
+                  <p class="card-text">Strategy • War • Empire building</p>
+                </div>
+
+                <div class="text-muted small ms-auto">
+                  <p class="mb-0 text-white">203 hours past 2 weeks</p>
+                  <p class="mb-0 text-white">Last played on 17 Jan</p>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h5 class="card-title">Total War: Empire – Definitive Edition</h5>
-              <p class="card-text">Strategy • War • Empire building</p>
+
+            <div class="card mb-3">
+              <div class="card-header">Comments</div>
+              <div class="card-body">
+                <div class="input-group">
+
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="bi bi-chat-left-text"></i>
+                  </span>
+
+
+                  <input type="text" class="form-control" placeholder="Add a comment">
+
+
+                  <button class="btn btn-primary" type="button">Send</button>
+                </div>
+              </div>
             </div>
 
-            <div class="text-muted small ms-auto">
-              <p class="mb-0 text-white">203 hours past 2 weeks</p>
-              <p class="mb-0 text-white">Last played on 17 Jan</p>
+
+
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="container text-white p-3 rounded sidebar">
+              <h4 class="text-primary-emphasis mb-0">Currently Online</h4>
+              <hr>
+              <ul class="list-unstyled flex-column gap-2">
+                <li><a href="#" class="sidebar-link">Badges</a></li>
+                <li><a href="https://store.steampowered.com/app/10500/Total_War_EMPIRE__Definitive_Edition/"
+                    class="sidebar-link">Games</a> 1</li>
+                <li><a href="#" class="sidebar-link">Inventory</a></li>
+                <li><a href="#" class="sidebar-link">Screenshots</a></li>
+                <li><a href="#" class="sidebar-link">Videos</a></li>
+                <li><a href="#" class="sidebar-link">Workshop Items</a></li>
+                <li><a href="#" class="sidebar-link">Reviews</a></li>
+                <li><a href="#" class="sidebar-link">Guides</a></li>
+                <li><a href="#" class="sidebar-link">Artwork</a></li>
+                <li><a href="#" class="sidebar-link">Privacy</a></li>
+              </ul>
+
             </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <footer class="bg-dark text-light mt-5">
+
+    <div class="bg-black">
+      <div class="container py-4">
+
+        <div class="row align-items-center text-center text-md-start g-3">
+          <div class="col-md-2">
+            <img src="https://steamstore-a.akamaihd.net/public/images/v6/logo_valve_footer.png" class="img-fluid"
+              alt="Valve">
+          </div>
+
+          <div class="col-md-8 small text-secondary">
+            <p class="mb-2">
+              © 2026 Valve Corporation. All rights reserved. All trademarks are
+              property of their respective owners in the US and other countries.
+              VAT included in all prices where applicable.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+              <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+              <a href="#" class="text-secondary text-decoration-none">Legal</a>
+              <a href="#" class="text-secondary text-decoration-none">Steam Subscriber Agreement</a>
+              <a href="#" class="text-secondary text-decoration-none">Refunds</a>
+            </div>
+          </div>
+
+          <div class="col-md-2 text-md-end">
+            <img src="https://steamstore-a.akamaihd.net/public/images/v6/logo_steam_footer.png" class="img-fluid"
+              alt="Steam">
           </div>
         </div>
 
-       
-<div class="card mb-3">
-  <div class="card-header">Comments</div>
-  <div class="card-body">
-    <div class="input-group">
-      
-      <span class="input-group-text bg-dark text-white">
-        <i class="bi bi-chat-left-text"></i>
-      </span>
-      
-   
-      <input type="text" class="form-control" placeholder="Add a comment">
+        <hr class="border-secondary my-4">
 
-      
-      <button class="btn btn-primary" type="button">Send</button>
-    </div>
-  </div>
-</div>
-
-  
-
-      </div>
-
-      <div class="col-lg-4 col-md-12">
-  <div class="container text-white p-3 rounded sidebar">
-    <h4 class="text-primary-emphasis mb-0">Currently Online</h4>
-    <hr>
-    <ul class="list-unstyled flex-column gap-2">
-  <li><a href="#" class="sidebar-link">Badges</a></li>
-  <li><a href="https://store.steampowered.com/app/10500/Total_War_EMPIRE__Definitive_Edition/" class="sidebar-link">Games</a>   1</li>
-  <li><a href="#" class="sidebar-link">Inventory</a></li>
-  <li><a href="#" class="sidebar-link">Screenshots</a></li>
-  <li><a href="#" class="sidebar-link">Videos</a></li>
-  <li><a href="#" class="sidebar-link">Workshop Items</a></li>
-  <li><a href="#" class="sidebar-link">Reviews</a></li>
-  <li><a href="#" class="sidebar-link">Guides</a></li>
-  <li><a href="#" class="sidebar-link">Artwork</a></li>
-  <li><a href="#" class="sidebar-link">Privacy</a></li>
-</ul>
-
-  </div>
-</div>
-
-
-    </div> 
-  </div> 
-</div>
-
- 
-
-</div>
-     <footer class="bg-dark text-light mt-5">
-  
-  <div class="bg-black">
-    <div class="container py-4">
-
-      <div class="row align-items-center text-center text-md-start g-3">
-        <div class="col-md-2">
-          <img src="https://steamstore-a.akamaihd.net/public/images/v6/logo_valve_footer.png"
-               class="img-fluid" alt="Valve">
-        </div>
-
-        <div class="col-md-8 small text-secondary">
-          <p class="mb-2">
-            © 2026 Valve Corporation. All rights reserved. All trademarks are
-            property of their respective owners in the US and other countries.
-            VAT included in all prices where applicable.
-          </p>
-
-          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-            <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
-            <a href="#" class="text-secondary text-decoration-none">Legal</a>
-            <a href="#" class="text-secondary text-decoration-none">Steam Subscriber Agreement</a>
-            <a href="#" class="text-secondary text-decoration-none">Refunds</a>
+        <div class="d-flex flex-wrap justify-content-center gap-4 small">
+          <div class="footer-bottom">
+            <a href="https://www.valvesoftware.com/en/about">About Valve</a>
+            <a href="https://partner.steamgames.com">Steamworks</a>
+            <a href="https://www.valvesoftware.com/en/">Jobs</a>
+            <a href="https://partner.steamgames.com/steamdirect">Steam Distribution</a>
+            <a href="https://store.steampowered.com/digitalgiftcards/">Gift Cards</a>
+            <a href="https://store.steampowered.com" class="text-secondary text-decoration-none">Steam</a>
+            <a href="" class="text-secondary text-decoration-none">@steam-games</a>
           </div>
-        </div>
 
-        <div class="col-md-2 text-md-end">
-          <img src="https://steamstore-a.akamaihd.net/public/images/v6/logo_steam_footer.png"
-               class="img-fluid" alt="Steam">
         </div>
       </div>
 
-      <hr class="border-secondary my-4">
-
-      <div class="d-flex flex-wrap justify-content-center gap-4 small">
-        <div class="footer-bottom">
-      <a href="https://www.valvesoftware.com/en/about">About Valve</a>
-      <a href="https://partner.steamgames.com">Steamworks</a>
-      <a href="https://www.valvesoftware.com/en/">Jobs</a>
-      <a href="https://partner.steamgames.com/steamdirect">Steam Distribution</a>
-      <a href="https://store.steampowered.com/digitalgiftcards/">Gift Cards</a>
-        <a href="https://store.steampowered.com" class="text-secondary text-decoration-none">Steam</a>
-        <a href="" class="text-secondary text-decoration-none">@steam-games</a>
-      </div>
-
-    </div>
-  </div>
-
-</footer>
+  </footer>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

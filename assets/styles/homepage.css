@@ -825,6 +825,14 @@ body {
   color: rgb(102 192 244);
 }
 
+.category_row:hover{
+  cursor: pointer;
+
+}
+
+.game_card:hover{
+  cursor: pointer;
+}
 .home_block{
   position: relative;
   top: 100px;
@@ -834,7 +842,7 @@ body {
 }
 
 .block_title{
-  color:#fff;
+  color:white;
   font-weight:800;
   letter-spacing:0.8px;
   font-size:14px;
