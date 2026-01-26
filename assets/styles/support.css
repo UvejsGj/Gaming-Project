@@ -63,6 +63,7 @@ a {
 .popular {
   margin-top: 24px;
   font-size: 16px;
+  color: #319fde;
 }
 
 
@@ -83,10 +84,33 @@ a {
   align-items: center;
   padding: 16px 20px;
   margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
 
 }
+
+.menu-left {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between icon and text */
+}
+
+.menu-left img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.menu-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-arrow {
+    font-size: 18px;
+    color: #a0b0c0;
+}
+
 
 .menu-item:hover {
   background-color: #344f73;
@@ -121,7 +145,7 @@ a {
   padding: 16px 20px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   width: 94%;
   text-align: center;
 }
@@ -137,7 +161,7 @@ a {
   max-width: 900px;
   margin: 40px auto;
   padding: 24px;
-  border-radius: 6px;
+  border-radius: 0px;
   background: linear-gradient(180deg, #0f2236, #0b1a2b);
   color: #c7d5e0;
 }
@@ -156,7 +180,7 @@ button {
   border: none;
   padding: 10px 18px;
   font-size: 14px;
-  border-radius: 3px;
+  border-radius: 0px;
   cursor: pointer;
 }
 

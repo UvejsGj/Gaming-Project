@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
+  background:#171D25;
   height: 130px;
   width: 100%;
   position: relative;
