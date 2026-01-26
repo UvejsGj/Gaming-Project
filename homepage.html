@@ -30,42 +30,89 @@
 
     <div class="main_page">
       <h4>FEATURED & RECOMMENDED</h4>
-      <div class="main_background">
-        <div class="main_image">
-          <img class="eafc26" src="/assets/Images/eafc26.jpg" alt="" />
-        </div>
-        <div class="main_content">
-          <h1>EA SPORTS FC™ 26</h1>
-          <div class="grid">
-            <img
-              class="grid1"
-              src="/assets/Images/eafc26coverpic1.jpg"
-              alt="Image 1"
-            />
-            <img
-              class="grid2"
-              src="/assets/Images/eafc26coverpic2.jpg"
-              alt="Image 2"
-            />
-            <img
-              class="grid3"
-              src="/assets/Images/eafc26coverpic3.jpg"
-              alt="Image 3"
-            />
-            <img
-              class="grid4"
-              src="/assets/Images/eafc26coverpic4.jpg"
-              alt="Image 4"
-            />
+
+      <div class="featured_wrap">
+        <button class="feat_arrow left" id="featPrev">‹</button>
+
+        <div class="featured_view">
+          <div class="featured_track" id="featuredTrack">
+            <!-- slide nje -->
+            <div class="feature_slide">
+              <div class="main_background">
+                <div class="main_image">
+                  <img class="eafc26" src="/assets/Images/eafc26.jpg" alt="" />
+                </div>
+                <div class="main_content">
+                  <h1>EA SPORTS FC™ 26</h1>
+                  <div class="grid">
+                    <img
+                      src="/assets/Images/eafc26coverpic1.jpg"
+                      alt="Image 1"
+                    />
+                    <img
+                      src="/assets/Images/eafc26coverpic2.jpg"
+                      alt="Image 2"
+                    />
+                    <img
+                      src="/assets/Images/eafc26coverpic3.jpg"
+                      alt="Image 3"
+                    />
+                    <img
+                      src="/assets/Images/eafc26coverpic4.jpg"
+                      alt="Image 4"
+                    />
+                  </div>
+                  <h3>Now Available</h3>
+                  <h4>Top Seller</h4>
+                  <h5>
+                    -70% <span class="org">69,99€</span>
+                    <span class="discount">27,--€</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature_slide">
+              <div class="main_background1">
+                <div class="main_image1">
+                  <img class="gtavi" src="/assets/Images/gtavi.jpg" alt="" />
+                </div>
+                <div class="main_content1">
+                  <h1>Grand Theft Auto VI</h1>
+                  <div class="grid1">
+                    <img
+                      src="/assets/Images/gtavicoverpic1.jpg"
+                      alt="Image 1"
+                    />
+                    <img
+                      src="/assets/Images/gtavicoverpic2.jpg"
+                      alt="Image 2"
+                    />
+                    <img
+                      src="/assets/Images/gtavicoverpic3.jpg"
+                      alt="Image 3"
+                    />
+                    <img
+                      src="/assets/Images/gtavicoverpic4.jpg"
+                      alt="Image 4"
+                    />
+                  </div>
+                  <h3>Now Available</h3>
+                  <h4>Top Seller</h4>
+                  <h5>
+                    -70% <span class="org1">69,99€</span>
+                    <span class="discount1">27,--€</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3>Now Available</h3>
-          <h4>Top Seller</h4>
-          <h5>
-            -70% <span class="org">69,99€</span
-            ><span class="discount">27,--€ </span>
-          </h5>
         </div>
+
+        <button class="feat_arrow right" id="featNext">›</button>
       </div>
+
+      <div class="feat_dots" id="featDots"></div>
     </div>
 
     <div class="steam_ad">
@@ -179,5 +226,6 @@
         </div>
       </div>
     </footer>
+    <script src="/assets/scripts/homepage.js"></script>
   </body>
 </html>
