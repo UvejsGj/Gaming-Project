@@ -361,8 +361,172 @@ aside {
   color: rgb(102 192 244);
 }
 
+@media (max-width: 1100px) {
+  header {
+    top: 130px;
+    height: 7em;
+  }
 
+  .header-text {
+    top: 20px;
+  }
 
+  main {
+    margin-top: 180px;
+    width: min(1000px, 95%);
+  }
 
+  .main-text {
+    margin: 0 40px 0 0;
+  }
 
+  .all-listing-table {
+    width: min(700px, 100%);
+  }
+
+  .all-listing-table input[type="submit"] {
+    width: 100%;
+  }
+
+  .first-listing {
+    margin-right: 0;
+    flex: 1;
+  }
+  .second-listing,
+  .third-listing {
+    width: 120px;
+    margin: 0;
+  }
+
+  .itemstitle-box {
+    margin-right: 0;
+    flex: 1;
+  }
+
+  .quantity-box {
+    margin-right: 0;
+    width: 120px;
+    text-align: center;
+  }
+
+  .price-box {
+    margin-left: 0;
+    width: 120px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    margin-top: 170px;
+  }
+
+  .main-text {
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .all-listing-table {
+    width: 100%;
+    margin: 0;
+  }
+
+  aside {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 6.5em;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .header-text {
+    top: 10px;
+    padding: 0 12px;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 150px;
+    width: 95%;
+  }
+
+  .listing-names {
+    margin: 7px 0;
+  }
+
+  .first-listing,
+  .second-listing,
+  .third-listing {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .items-listings {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .image {
+    width: 56px;
+    height: 56px;
+    margin-right: 0;
+  }
+
+  .itemstitle-box {
+    flex: 1 1 60%;
+    padding: 0;
+  }
+
+  .quantity-box {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+    text-align: left;
+  }
+
+  .price-box {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .all-listing-table input[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .items-first-text,
+  .items-subtitle,
+  .quantity,
+  .price {
+    font-size: 11px;
+  }
+
+  .footer-top {
+    gap: 14px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+}
 
