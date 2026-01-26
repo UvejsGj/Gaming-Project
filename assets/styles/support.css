@@ -92,7 +92,7 @@ a {
 .menu-left {
     display: flex;
     align-items: center;
-    gap: 12px; /* space between icon and text */
+    gap: 12px; 
 }
 
 .menu-left img {
