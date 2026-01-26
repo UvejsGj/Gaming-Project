@@ -414,12 +414,16 @@ aside {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   main {
     flex-direction: column;
     align-items: stretch;
     gap: 16px;
     margin-top: 170px;
+  }
+
+  header{
+    top: 145px;
   }
 
   .main-text {
@@ -442,6 +446,7 @@ aside {
 @media (max-width: 600px) {
   header {
     height: 6.5em;
+    top: 150px;
   }
 
   .title {
@@ -452,6 +457,7 @@ aside {
     top: 10px;
     padding: 0 12px;
     text-align: center;
+    margin-top: 25px;
   }
 
   main {
