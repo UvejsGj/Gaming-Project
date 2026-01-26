@@ -390,7 +390,6 @@ aside {
 
   .first-listing {
     margin-right: 0;
-    flex: 1;
   }
   .second-listing,
   .third-listing {
@@ -400,7 +399,6 @@ aside {
 
   .itemstitle-box {
     margin-right: 0;
-    flex: 1;
   }
 
   .quantity-box {
@@ -484,19 +482,16 @@ aside {
   }
 
   .itemstitle-box {
-    flex: 1 1 60%;
     padding: 0;
   }
 
   .quantity-box {
-    flex: 0 0 auto;
     width: auto;
     padding: 0;
     text-align: left;
   }
 
   .price-box {
-    flex: 0 0 auto;
     width: auto;
     padding: 0;
     margin-left: 0;
