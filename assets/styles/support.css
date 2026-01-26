@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* base */
-html, body {
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -12,7 +11,9 @@ html, body {
 
 img { max-width: 100%; height: auto; }
 
-/* NAVBAR (your style) */
+
+
+
 .navbar {
   background:#171D25;
   height: 130px;
@@ -20,10 +21,14 @@ img { max-width: 100%; height: auto; }
   position: relative;
 }
 
+
+
 .steamlogo {
   margin-top: 20px;
   margin-left: 100px;
 }
+
+
 
 .navbar > a {
   position: relative;
@@ -34,6 +39,9 @@ img { max-width: 100%; height: auto; }
   margin-right: 40px;
 }
 
+
+
+
 .navbar > a.active {
   color: #1a9fff;
   font-weight: bold;
@@ -41,17 +49,22 @@ img { max-width: 100%; height: auto; }
   padding-bottom: 2px;
 }
 
-/* PAGE WRAP */
+
+
 .support_page{
   width: min(900px, 92vw);
   margin: 0 auto;
   padding-top: 24px; /* space under navbar */
 }
 
+
+
 .support_head{
   text-align: center;
   margin-top: 18px;
 }
+
+
 
 .support_title{
   margin: 0;
@@ -59,11 +72,15 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
 }
 
+
+
 .help{
   margin: 6px 0 0;
   color: #319fde;
   font-size: 16px;
 }
+
+
 
 .popular{
   margin: 24px 0 10px;
@@ -71,7 +88,11 @@ img { max-width: 100%; height: auto; }
   font-size:16px;
 }
 
-/* steam card */
+
+
+
+
+
 .steam-card {
   margin: 24px auto;
   padding: 24px;
@@ -93,7 +114,11 @@ img { max-width: 100%; height: auto; }
 
 .btn-primary:hover { background: #7fd0ff; }
 
-/* menu */
+
+
+
+
+
 .menu { margin: 16px 0; }
 
 .menu-item {
@@ -117,7 +142,10 @@ img { max-width: 100%; height: auto; }
 
 .menu-arrow { font-size: 18px; color: #a0b0c0; }
 
-/* search */
+
+
+
+
 .search-bar { margin: 18px 0 40px; }
 
 .search-input input {
@@ -131,7 +159,11 @@ img { max-width: 100%; height: auto; }
   text-align: center;
 }
 
-/* footer */
+
+
+
+
+
 .steam-footer {
   background-color: #000;
   color: #8f98a0;
@@ -164,7 +196,7 @@ img { max-width: 100%; height: auto; }
 
 .footer-links a:hover { color: rgb(102 192 244); }
 
-/* responsive navbar */
+/* pjesa responsive */
 @media (max-width: 1024px) {
   .steamlogo { margin-left: 24px; }
 
