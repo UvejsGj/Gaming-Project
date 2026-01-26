@@ -54,7 +54,7 @@ img { max-width: 100%; height: auto; }
 .support_page{
   width: min(900px, 92vw);
   margin: 0 auto;
-  padding-top: 24px; /* space under navbar */
+  padding-top: 24px; 
 }
 
 
@@ -67,6 +67,7 @@ img { max-width: 100%; height: auto; }
 
 
 .support_title{
+  text-align: left;
   margin: 0;
   font-size: 28px;
   font-weight: 700;
@@ -75,6 +76,7 @@ img { max-width: 100%; height: auto; }
 
 
 .help{
+  text-align: left;
   margin: 6px 0 0;
   color: #319fde;
   font-size: 16px;
@@ -173,7 +175,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .footer-container {
-  width: min(1200px, 95%); /* wider than 940px so it won't look narrow */
+  width: min(1200px, 95%); 
   margin: 0 auto;
   padding: 0 15px;
 }
