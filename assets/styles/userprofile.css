@@ -1,49 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
+
+html, body {
   margin: 0;
   padding: 0;
-  height: 100% !important;
-  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%) !important; 
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: #ffffff !important;
+  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
 }
 
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 .navbar {
-  background: linear-gradient(180deg, #171d25 0%, #1b2838 100%);
-  height: 90px;
+  background: #171d25;
+  height: 130px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  position: relative;
 }
 
 .steamlogo {
-  height: 45px;
-  margin-right: 60px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
-.navbar a {
+.navbar > a {
+  position: relative;
+  top: 4%;
   text-decoration: none;
-  color: #c7d5e0;
-  font-size: 18px;
-  margin-right: 35px;
-  transition: color 0.2s;
+  color: #ffffff;
+  left: -5%;
+  font-size: 20px;
+  margin-right: 40px;
 }
 
-.navbar a:hover {
+.navbar > a:hover {
   color: #ffffff;
 }
 
-.navbar a.active {
-  color: rgb(1, 132, 255);
-  font-weight: 600;
-  border-bottom: none;
-  padding-bottom: 4px;
+.navbar > a.active {
+  color: #1a9fff;
+  font-weight: bold;
+  border-bottom: 3px solid #1a9fff;
+  padding-bottom: 2px;
 }
 
 
@@ -66,25 +69,31 @@ body {
   filter: brightness(0) invert(1);
 }
 
+
 .achievements {
-    margin-top: 13px;
-    display: flex;
-    justify-content: space-between; 
-    gap: 33%; 
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  gap: 33%;
 }
 
 .achievements img {
-    width: 80%; 
-    height: 80%;
+  width: 80%;
+  height: 80%;
 }
 
+
 .card {
-  background-color: rgba(0, 0, 0, 0.131) !important;
+  background-color: rgba(0, 0, 0, 0.13) !important;
   margin: 10px;
 }
 
+.pr-container {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+
 .sidebar {
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #00000014;
@@ -101,131 +110,33 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;       
-  flex-grow: 1;   
+  gap: 1rem;
 }
 
 .sidebar ul li {
   font-size: 1.2rem;
 }
 
-.profile-container {
-    background-color: #110e4d00;
-    margin: 20px;
-}
-
 .sidebar-link {
-  color: white;            
-  text-decoration: none;    
-}
-
-.sidebar-link:active {
-  color: #1b9fff;          
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .sidebar-link:hover {
-  color: white;            
+  color: #ffffff;
 }
 
-.pr-container {
-  background-color: rgba(0, 0, 0, 0.152);
+.sidebar-link:active {
+  color: #1b9fff;
 }
 
-/* ================= USER PROFILE RESPONSIVE ================= */
-
-/* Make sure nothing causes horizontal scrolling */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .profile-container {
   width: min(1000px, 95%);
+  margin: 20px;
+  background-color: transparent;
 }
 
-@media (max-width: 992px) {
-  .pr-container {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .pr-container img {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .pr-container .ms-auto {
-    width: 100%;
-    text-align: left !important;
-  }
-
-  .card .card-body.d-flex {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .card .card-body.d-flex > .me-3 {
-    width: 100% !important;    
-    max-width: 420px;
-  }
-
-  .card .card-body.d-flex > div:nth-child(2) {
-    width: 100%;
-  }
-
-  .card .card-body.d-flex > .ms-auto {
-    width: 100%;
-    text-align: left !important;
-  }
-
-  .sidebar {
-    margin-top: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-brand img {
-    width: 110px !important;
-    height: auto !important;
-  }
-
-  .profile-container {
-    padding: 14px !important;
-  }
-
-  .pr-container {
-    padding: 12px !important;
-  }
-
-  .pr-container h1 {
-    font-size: 20px !important;
-  }
-
-  .achievements-icons {
-    flex-wrap: wrap;
-  }
-
-  .achievements-icons img {
-    width: 34px;
-    height: 34px;
-  }
-
-  .input-group {
-    flex-wrap: wrap;
-  }
-
-  .input-group .form-control {
-    flex: 1 1 100%;
-  }
-
-  .input-group .btn {
-    width: 100%;
-  }
-
-  .sidebar ul li {
-    padding: 4px 0;
-  }
-}
 
 .footer-bottom {
   display: flex;
@@ -244,22 +155,16 @@ img {
   color: #66c0f4;
 }
 
-html, body {
-  overflow-x: hidden;
-}
 
 @media (max-width: 1100px) {
-  .navbar {
-    padding: 0 30px;
-  }
-
   .steamlogo {
-    margin-right: 30px;
+    margin-left: 24px;
   }
 
-  .navbar a {
+  .navbar > a {
     font-size: 16px;
     margin-right: 18px;
+    top: -18%;
   }
 
   .main_profile {
@@ -270,19 +175,21 @@ html, body {
 @media (max-width: 992px) {
   .navbar {
     height: auto;
-    padding: 12px 16px;
+    padding-bottom: 10px;
+    display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     align-items: center;
   }
 
   .steamlogo {
+    margin-left: 12px;
+    margin-top: 14px;
     height: 38px;
-    margin-right: 12px;
   }
 
-  .navbar a {
-    margin-right: 12px;
+  .navbar > a {
+    top: 0;
+    margin: 10px 12px 0;
     font-size: 15px;
     white-space: nowrap;
   }
@@ -290,6 +197,16 @@ html, body {
   .main_profile {
     margin-top: 120px;
     padding: 0 12px;
+  }
+
+  .pr-container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .pr-container img {
+    width: 80px !important;
+    height: 80px !important;
   }
 
   .achievements {
@@ -301,7 +218,6 @@ html, body {
   .achievements img {
     width: 40px;
     height: 40px;
-    object-fit: cover;
   }
 
   .sidebar {
@@ -316,6 +232,18 @@ html, body {
   .sidebar ul li {
     font-size: 1rem;
   }
+
+  .card .card-body.d-flex {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .card .card-body.d-flex > .me-3,
+  .card .card-body.d-flex > div,
+  .card .card-body.d-flex > .ms-auto {
+    width: 100% !important;
+    text-align: left !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -327,8 +255,7 @@ html, body {
     height: 32px;
   }
 
-  .navbar a {
-    display: inline-block;
+  .navbar > a {
     font-size: 14px;
     margin-right: 10px;
     padding: 6px 0;
