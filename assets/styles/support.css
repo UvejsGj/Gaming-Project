@@ -54,12 +54,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .support_title{
+  text-align: left;
   margin: 0;
   font-size: 28px;
   font-weight: 700;
 }
 
 .help{
+  text-align: left;
   margin: 6px 0 0;
   color: #319fde;
   font-size: 16px;
@@ -71,7 +73,6 @@ img { max-width: 100%; height: auto; }
   font-size:16px;
 }
 
-/* steam card */
 .steam-card {
   margin: 24px auto;
   padding: 24px;
@@ -93,7 +94,6 @@ img { max-width: 100%; height: auto; }
 
 .btn-primary:hover { background: #7fd0ff; }
 
-/* menu */
 .menu { margin: 16px 0; }
 
 .menu-item {
@@ -117,7 +117,6 @@ img { max-width: 100%; height: auto; }
 
 .menu-arrow { font-size: 18px; color: #a0b0c0; }
 
-/* search */
 .search-bar { margin: 18px 0 40px; }
 
 .search-input input {
@@ -131,7 +130,6 @@ img { max-width: 100%; height: auto; }
   text-align: center;
 }
 
-/* footer */
 .steam-footer {
   background-color: #000;
   color: #8f98a0;
@@ -141,7 +139,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .footer-container {
-  width: min(1200px, 95%); /* wider than 940px so it won't look narrow */
+  width: min(1200px, 95%); 
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -164,7 +162,6 @@ img { max-width: 100%; height: auto; }
 
 .footer-links a:hover { color: rgb(102 192 244); }
 
-/* responsive navbar */
 @media (max-width: 1024px) {
   .steamlogo { margin-left: 24px; }
 
